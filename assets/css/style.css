@@ -480,7 +480,7 @@ ul.sub-menu li:hover a span{
 <!-- Start Consen Slider Area Css -->
 <!-- ============================================================== -->*/
 .slider-area {
-    background: url(../images/slider/hero-bg.png);
+    background: url(../images/slider/main-section-background.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -6122,7 +6122,7 @@ span.fill {
 
 /*tabe*/
 
-/*@import url(https://fonts.googleapis.com/css?family=Roboto:300);*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 .tab {
     padding-top: 50px;

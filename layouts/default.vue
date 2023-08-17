@@ -29,11 +29,21 @@
           <div class="col-lg-9 pl-0 pr-0">
             <nav class="consen_menu">
               <ul class="nav_scroll">
-                <li> <nuxt-link to="/">Home</nuxt-link></li>
-                <li> <nuxt-link to="/portfolio">Portfolio</nuxt-link></li>
-                <li> <nuxt-link to="/about-us">About us</nuxt-link></li>
-                <li> <nuxt-link to="/services">Services</nuxt-link></li>
-                <li> <nuxt-link to="/contact">Contact</nuxt-link></li>
+                <li>
+                  <nuxt-link to="/">Home</nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/portfolio">Portfolio</nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/about-us">About us</nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/services">Services</nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/contact">Contact</nuxt-link>
+                </li>
               </ul>
               <div class="header-button">
                 <nuxt-link to="/contact">Schedule Consultation</nuxt-link>
@@ -91,43 +101,12 @@
       </div>
     </div>
     <!--    pages-->
-      <slot/>
+    <slot/>
     <!--==================================================-->
     <!-- Start consen Footer Middle Area -->
     <!--==================================================-->
     <div class="footer-middle">
       <div class="container">
-        <div class="subscribe-area">
-          <div class="row ">
-            <div class="col-lg-6 col-md-6">
-              <div class="subscribe-title">
-                <h1>Subscribe to our Newsletter</h1>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-              <form action="https://formspree.io/f/myyleorq" method="POST" id="dreamit-form">
-                <div class="subscribe_form">
-                  <input type="email" name="email" id="email" class="form-control" required
-                         data-error="Please enter your email" placeholder="Enter Your Email">
-                  <button type="submit" class="btn">Subscribe</button>
-                </div>
-                <div class="subscribe_form_send">
-
-                </div>
-              </form>
-              <div id="status"></div>
-            </div>
-          </div>
-          <div class="subscribe-shape">
-            <div class="subscribe-thumb bounce-animate5">
-              <img src="~/assets/images/resource/small-dot.png" alt="">
-            </div>
-            <div class="subscribe-thumb1">
-              <img src="~/assets/images/resource/big-dot.png" alt="">
-            </div>
-          </div>
-        </div>
-
         <div class="footer-bg">
           <div class="row">
             <div class="col-lg-4 col-sm-6">
@@ -174,41 +153,6 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
-              <div id="em-recent-post-widget" class="mt-5 mt-sm-0">
-                <div class="single-widget-item">
-                  <h4 class="widget-title">Popular Posts</h4>
-                  <div class="recent-post-item active">
-                    <div class="recent-post-image">
-                      <a href="#">
-                        <img width="80" height="80" src="~/assets/images/resource/footer1.png" alt="">
-                      </a>
-                    </div>
-                    <div class="recent-post-text">
-                      <h6><a href="#">
-                        How To Plugin Install WP server?
-                      </a>
-                      </h6>
-                      <span class="rcomment">Dec 12, 2023</span>
-                    </div>
-                  </div>
-                  <div class="recent-post-item">
-                    <div class="recent-post-image">
-                      <a href="#">
-                        <img width="80" height="80" src="~/assets/images/resource/footer2.png" alt="">
-                      </a>
-                    </div>
-                    <div class="recent-post-text">
-                      <h6><a href="#">
-                        Top 10 Most Usefull Google Extansion
-                      </a>
-                      </h6>
-                      <span class="rcomment">Dec 15, 2023</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
           <div class="foorer-shape">
             <div class="footer-thumb">
@@ -234,7 +178,7 @@
             <div class="col-md-8">
               <div class="footer-bottom-content">
                 <div class="footer-bottom-content-copy">
-                  <p>© 2023 <span>Consen</span> all rights reserved. Design By Dream-IT.</p>
+                  <p>© {{ new Date().getFullYear() }} <span>Consen</span> all rights reserved. Design By Dream-IT.</p>
                 </div>
               </div>
             </div>
